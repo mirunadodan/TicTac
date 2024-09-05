@@ -1,0 +1,92 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  border: 5px solid black;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  padding:1rem;
+  gap:1rem;
+}
+.grid_reset{
+  margin: 2rem;
+  border: 1px solid black;
+
+}
+
+/* PLAYERS */
+.players {
+  display: flex;
+  height: 150px;
+  gap:1.5rem;
+  justify-content: space-between;
+}
+.players_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: black;
+  border-left: 5px solid #646cffc2;
+  border-bottom: 5px solid #646cffc2;
+  border-right: 5px solid #646cffc2;
+}
+.players_text {
+  font-size: large;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+.players_reset {
+  height: 50px;
+  align-self: center;
+}
+.players_count {
+  color: white;
+}
+img {
+  height: 20%;
+}
+
+
+/* GENERAL */
+
+h1 {
+  /* font-size: 10px; */
+  font-weight: 500;
+  color: #646cffc2;
+}
+button {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border 0.25s;
+}
+button:hover {
+  border-color: #646cffc2;
+  background-color: #646cffc2;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
